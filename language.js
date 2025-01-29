@@ -265,7 +265,7 @@ const translations = {
         "hcm-night-tour-description": "Trải nghiệm cuộc sống về đêm sôi động và chợ đêm tại Thành phố Hồ Chí Minh."
 
     },
-    ch {
+    ch: {
         "reservation-btn": "非会员预约",
         "about-link": "酒店介绍",
         "rooms-link": "客房",
