@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="contact-title">연락처</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #A68A64;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #8C7250;
+        }
+
+        #response-container {
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+        }
+
+        #response-container p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 40px;
+        }
+
+        .form-box {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script defer src="main.js"></script> <!-- 헤더와 푸터 로드 -->
+    <script defer src="language.js"></script> <!-- 언어 변경 스크립트 -->
+</head>
+<body>
+<header>
+    <!-- 헤더 내용 -->
+</header>
+
+<main>
+    <section class="contact-section">
+        <h2 data-translate="contact-title">연락처</h2>
+
+        <div class="contact-info">
+            <p><strong data-translate="phone-label">현지 전화번호:</strong> 028 5410 7949</p>
+            <p><strong data-translate="phone-korea-label">한국 전화번호:</strong> 090 237 8850</p>
+            <p><strong data-translate="kakao-label">카카오톡:</strong> hst5679</p>
+            <p><strong data-translate="email-label">이메일:</strong> imperialsaigonhotel@gmail.com</p>
+            <p><strong data-translate="address-label">주소:</strong> 81 82 Nội khu Hưng Phước 1, Tân Phong, Quận 7, Hồ Chí Minh, 베트남</p>
+        </div>
+
+        <div class="form-group">
+            <div class="form-box">
+                <h3>AI에게 질문하기</h3>
+                <form class="contact-form" id="ai-contact-form">
+                    <label for="ai-name" data-translate="name-label">이름:</label>
+                    <input type="text" id="ai-name" name="ai-name" required>
+
+                    <label for="ai-message" data-translate="message-label">메시지:</label>
+                    <textarea id="ai-message" name="ai-message" rows="5" required></textarea>
+
+                    <button type="submit" data-translate="submit-contact-btn">문의하기</button>
+                </form>
+                <div id="response-container">
+                    <h3 data-translate="ai-response-title">AI 응답</h3>
+                    <p id="ai-response"></p>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <h3>사장님에게 직접 문의하기</h3>
+                <form class="contact-form" id="direct-contact-form">
+                    <label for="direct-name" data-translate="name-label">이름:</label>
+                    <input type="text" id="direct-name" name="direct-name" required>
+
+                    <label for="direct-email" data-translate="email-form-label">이메일:</label>
+                    <input type="email" id="direct-email" name="direct-email" required>
+
+                    <label for="direct-message" data-translate="message-label">메시지:</label>
+                    <textarea id="direct-message" name="direct-message" rows="5" required></textarea>
+
+                    <button type="submit" data-translate="submit-contact-btn">문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <!-- 푸터 내용 -->
+</footer>
+
+<script defer src="language.js"></script>
+<script defer src="contact.js"></script>
+</body>
+</html>

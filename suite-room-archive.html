@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="suite-archive-title">럭셔리 스위트룸 아카이브</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .archive-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px auto;
+      max-width: 800px;
+    }
+
+    .archive-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .archive-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 800px;
+      margin-top: 20px;
+    }
+
+    .archive-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .archive-section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <script defer src="main.js"></script> <!-- 헤더와 푸터 로드를 위한 스크립트 -->
+  <script defer src="language.js"></script> <!-- 언어 전환 스크립트 -->
+</head>
+<body>
+<header>
+  <!-- 헤더 내용 -->
+</header>
+
+<main>
+  <section class="archive-section">
+    <h2 data-translate="suite-archive-title">럭셔리 스위트룸 사진 아카이브</h2>
+    <p data-translate="suite-archive-description">럭셔리 스위트룸의 다양한 모습을 확인해보세요. 각 사진은 객실의 고급스러운 분위기와 편안함을 보여줍니다.</p>
+    <div class="archive-gallery">
+      <img src="https://i.imgur.com/hO7KFBv.jpeg" alt="럭셔리 스위트룸 사진 1">
+      <img src="https://i.imgur.com/d9Tiy9M.jpeg" alt="럭셔리 스위트룸 사진 2">
+      <img src="https://i.imgur.com/LmcqpPH.jpeg" alt="럭셔리 스위트룸 사진 3">
+      <img src="https://i.imgur.com/D7MJSAZ.jpeg" alt="럭셔리 스위트룸 사진 4">
+      <img src="https://i.imgur.com/PzPMKUv.jpeg" alt="럭셔리 스위트룸 사진 5">
+      <img src="https://i.imgur.com/UeHgOao.jpeg" alt="럭셔리 스위트룸 사진 6">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <!-- 푸터 내용 -->
+</footer>
+<script defer src="language.js"></script>
+</body>
+</html>

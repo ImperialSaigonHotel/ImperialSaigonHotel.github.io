@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="reservation-title">비회원 예약</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .reservation-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header-banner {
+            background: url('https://via.placeholder.com/1200x300') center/cover no-repeat;
+            padding: 60px;
+            color: white;
+            text-align: center;
+        }
+
+        .header-banner h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .reservation-form {
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: #A68A64;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .form-btn:hover {
+            background: #8C7250;
+        }
+
+        .terms {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- 헤더 로딩 -->
+</header>
+
+<main>
+    <div class="reservation-container">
+        <div class="header-banner">
+            <h2 data-translate="reservation-title">비회원 예약</h2>
+        </div>
+
+        <form class="reservation-form" id="reservation-form">
+            <div class="form-group">
+                <label data-translate="name-label">이름</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="email-label">이메일</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="checkin-label">체크인 날짜</label>
+                <input type="date" id="checkin" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="checkout-label">체크아웃 날짜</label>
+                <input type="date" id="checkout" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="guests-label">투숙 인원</label>
+                <select id="guests" required>
+                    <option value="1">1명</option>
+                    <option value="2">2명</option>
+                    <option value="3">3명</option>
+                    <option value="4">4명</option>
+                    <option value="5">5명 이상</option>
+                </select>
+            </div>
+
+            <button type="submit" class="form-btn" data-translate="submit-btn">예약하기</button>
+
+            <p class="terms">* 예약을 진행하시면 이용 약관과 개인정보 보호정책에 동의하는 것으로 간주됩니다.</p>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <!-- 푸터 로딩 -->
+</footer>
+
+<script defer src="language.js"></script>
+<script defer src="main.js"></script>
+</body>
+</html>
